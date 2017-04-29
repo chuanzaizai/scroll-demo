@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'SimHei';
+}
+
+/* 字体文件 */
+
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot?t=1493438234518'); /* IE9*/
+  src: url('../fonts/iconfont.eot?t=1493438234518#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff?t=1493438234518') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf?t=1493438234518') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg?t=1493438234518#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shezhi:before { content: "\3434"; }
+
+.icon-shoucangshixin:before { content: "\e605"; }
+
+.icon-tuijian:before { content: "\e61f"; }
+
+.icon-shouyeshouye:before { content: "\e504"; }
+
+/* header、footer */
+.header, .footer{  
+    position: fixed;  
+    z-index: 2;  
+    left: 0; 
+    display: flex; 
+    width: 100%;  
+}  
+  
+.header{
+    top: 0;
+    height: 55px;  
+    background: #35a251;
+}
+
+.header .icon-shouyeshouye{
+    position: absolute;
+    left: 10px;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 33px;
+    color: #fff;
+} 
+
+.header .title{
+    flex: 1;
+    line-height: 55px;
+    color: #fff;
+    text-align: center;
+}   
+
+.footer{  
+    bottom: 0;
+    height: 50px;  
+    line-height: 50px; 
+    background: #1a1a1a; 
+}
+
+.footer span{  
+   flex: 1;
+   font-size: 20px;
+   color: #fff;
+   text-align: center;
+}  
+
+/* 列表容器 */ 
+.list-wrapper {
+    position: fixed;  
+    z-index: 1;  
+    top: 55px;  
+    bottom: 50px;  
+    left: 0;  
+    width: 100%;  
+    background: #ccc;  
+    overflow: hidden;  
+}
+
+.list-wrapper .list-content {
+    background: #fff;
+}
+
+.list-wrapper .list-item {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.list-wrapper .list-item .avatar{
+    flex: 0 0 100px;
+    border: 1px solid #ddd;
+}
+
+.list-wrapper .list-item .text{
+    position: relative;
+    flex: 1;
+    padding-left: 10px;
+}
+
+.list-wrapper .list-item .text h2{
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(7, 17, 27);
+}
+
+.list-wrapper .list-item .text span{
+    position: absolute;
+    bottom: 20px;
+    color: rgba(7, 17, 27, 0.7);
+}
+
+/* 下拉、上拉提示信息 */
+.top-tip{
+    position: absolute;  
+    top: -40px;  
+    left: 0;
+    z-index: 1;  
+    width: 100%;  
+    height:40px;  
+    line-height:40px;  
+    text-align:center;
+    color: #555;
+} 
+  
+.bottom-tip{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #777;
+    background: #f2f2f2;
+}
+
+/* 全局提示信息 */
+.alert{
+    display: none;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: rgba(7, 17, 27, 0.7);
+}

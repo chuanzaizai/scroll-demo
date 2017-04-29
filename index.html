@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+  <title>下拉刷新-上拉加载更多</title>
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+
+  <!-- header -->
+  <div class="header">
+    <span class="iconfont icon-shouyeshouye"></span>
+    <h2 class="title">演出列表</h2>
+  </div>
+
+  <!-- content -->
+  <div class="list-wrapper list-wrapper-hook">
+    <div>
+      <!-- 顶部提示信息 -->
+      <div class="top-tip">
+        <span class="refresh-hook">下拉刷新</span>
+      </div>
+      <!-- 列表 -->
+      <ul class="list-content list-content-hook">
+        <li class="list-item">
+          <div class="avatar">
+            <img src="img/1.png" width="100" height="100" />
+          </div>
+          <div class="text">
+            <h2>只会放肆,不会说谎,好青春也是谁不想要一个深情却刺激</h2>
+            <span>2016-11-23</span>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="avatar">
+            <img src="img/2.png" width="100" height="100" />
+          </div>
+          <div class="text">
+            <h2>只会放肆,不会说谎,好青春也是谁不想要一个深情却刺激</h2>
+            <span>2016-11-23</span>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="avatar">
+            <img src="img/3.png" width="100" height="100" />
+          </div>
+          <div class="text">
+            <h2>只会放肆,不会说谎,好青春也是谁不想要一个深情却刺激</h2>
+            <span>2016-11-23</span>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="avatar">
+            <img src="img/1.png" width="100" height="100" />
+          </div>
+          <div class="text">
+            <h2>只会放肆,不会说谎,好青春也是谁不想要一个深情却刺激</h2>
+            <span>2016-11-23</span>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="avatar">
+            <img src="img/2.png" width="100" height="100" />
+          </div>
+          <div class="text">
+            <h2>只会放肆,不会说谎,好青春也是谁不想要一个深情却刺激</h2>
+            <span>2016-11-23</span>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="avatar">
+            <img src="img/3.png" width="100" height="100" />
+          </div>
+          <div class="text">
+            <h2>只会放肆,不会说谎,好青春也是谁不想要一个深情却刺激</h2>
+            <span>2016-11-23</span>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="avatar">
+            <img src="img/1.png" width="100" height="100" />
+          </div>
+          <div class="text">
+            <h2>只会放肆,不会说谎,好青春也是谁不想要一个深情却刺激</h2>
+            <span>2016-11-23</span>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="avatar">
+            <img src="img/2.png" width="100" height="100" />
+          </div>
+          <div class="text">
+            <h2>只会放肆,不会说谎,好青春也是谁不想要一个深情却刺激</h2>
+            <span>2016-11-23</span>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="avatar">
+            <img src="img/3.png" width="100" height="100" />
+          </div>
+          <div class="text">
+            <h2>只会放肆,不会说谎,好青春也是谁不想要一个深情却刺激</h2>
+            <span>2016-11-23</span>
+          </div>
+        </li>
+      </ul>
+      <!-- 
+        1、底部提示信息 
+        2、这里有一种情况,就是没有更多数据时,这里的文本应该显示"暂无更多数据"
+      -->
+      <div class="bottom-tip">
+        <span class="loading-hook">查看更多</span>
+      </div>
+    </div>
+  </div>
+  <!-- content end  -->
+
+  <!-- footer -->
+  <div class="footer">
+    <span class="iconfont icon-tuijian"></span>
+    <span class="iconfont icon-shezhi"></span>
+    <span class="iconfont icon-shoucangshixin"></span>
+  </div> 
+
+  <!-- alert -->
+  <div class="alert alert-hook">刷新成功</div>
+
+  <!-- js -->
+  <script src="js/bscroll.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>
